@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FreeL.iml" filepath="$PROJECT_DIR$/FreeL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proglance.iml" filepath="$PROJECT_DIR$/proglance.iml" />
     </modules>
   </component>
 </project>

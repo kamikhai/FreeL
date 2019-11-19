@@ -1,0 +1,58 @@
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: rgb(104,113,146)!important;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+  color: rgb(162,168,169)!important;
+}
+
+
+
+#mainNav {
+  transition: all .2s;
+}
+
+/*.navig {
+    border-bottom: 1px solid rgba(41,33,33,0.92);
+  background-color: rgb(74,83,118);
+}*/
+.project-card-no-image {
+  border-top: 4px solid rgb(74,83,118);
+  box-shadow: 0 2px 10px rgba(0,0,0,.075);
+  padding: 35px;
+  margin-bottom: 30px;
+}
+
+a {
+  color: rgb(74,83,118);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.btn-outline-primary {
+  color: rgb(74,83,118);
+  border-color: rgb(74,83,118);
+}
+
+a:hover {
+  color: rgb(74,83,118);
+  text-decoration: underline;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: rgb(74,83,118);
+  border-color: rgb(74,83,118);
+}
+body {
+  margin: 0;
+  font-family: Lato,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+
