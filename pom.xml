@@ -8,6 +8,11 @@
     <artifactId>proglance</artifactId>
     <version>1.0.0</version>
 
+    <properties>
+        <maven.compiler.target>11.0.4</maven.compiler.target>
+        <maven.compiler.source>11.0.4</maven.compiler.source>
+    </properties>
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
         <dependency>
@@ -15,6 +20,14 @@
             <artifactId>tomcat-servlet-api</artifactId>
             <version>9.0.27</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.29</version>
+        </dependency>
+
 
     </dependencies>
 

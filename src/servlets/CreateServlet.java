@@ -21,7 +21,7 @@ public class CreateServlet extends HttpServlet {
         if (auth == null || auth.equals(false)) {
             resp.sendRedirect("/signIn");
         } else {
-            req.getRequestDispatcher("/create.jsp").forward(req, resp);
+            req.getRequestDispatcher("/create.ftl").forward(req, resp);
         }
     }
 

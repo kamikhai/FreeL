@@ -22,7 +22,7 @@ public class SignInServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Boolean auth = (Boolean) req.getSession().getAttribute("auth");
         if (auth == null || auth.equals(false)) {
-                req.getRequestDispatcher("/signIn.jsp").forward(req, resp);
+                req.getRequestDispatcher("/signIn.ftl").forward(req, resp);
         } else {
             resp.sendRedirect("/profile");
         }
@@ -60,6 +60,8 @@ public class SignInServlet extends HttpServlet {
                 }
                 resp.sendRedirect("/profile");
             } else {
+                req.setAttribute("email", resp.getHeader("email"));
+                    System.out.println(req.getSession().getAttribute("email"));
                 resp.sendRedirect("/signIn?er=Invalid login and/or password&email=" + email);
             }
         } else {

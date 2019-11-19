@@ -1,12 +1,6 @@
 <%@ page import="services.UserService" %>
 <%@ page import="models.User" %>
-<%@ page import="java.io.BufferedReader" %><%--
-  Created by IntelliJ IDEA.
-  User: kamilla
-  Date: 24.10.2019
-  Time: 10:51
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.io.BufferedReader" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 

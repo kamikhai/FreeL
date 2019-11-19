@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="proglance" />
+        <module name="FreeL" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="proglance" target="1.5" />
+      <module name="FreeL" target="11.0.4" />
+      <module name="proglance" target="11.0.4" />
     </bytecodeTargetLevel>
   </component>
 </project>
