@@ -2,6 +2,7 @@ package servlets;
 
 import models.Project;
 import services.CategoryForProjectService;
+import services.CategoryService;
 import services.ProjectService;
 import services.UserService;
 
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Arrays;
 
 @WebServlet("/create")
 public class CreateServlet extends HttpServlet {
@@ -21,6 +23,7 @@ public class CreateServlet extends HttpServlet {
         if (auth == null || auth.equals(false)) {
             resp.sendRedirect("/signIn");
         } else {
+            req.setAttribute("categories", CategoryService.findAll());
             req.getRequestDispatcher("/create.ftl").forward(req, resp);
         }
     }
@@ -34,8 +37,9 @@ public class CreateServlet extends HttpServlet {
         String github = req.getParameter("github");
         String[] cats = req.getParameterValues("cat");
 
-
+        System.out.println("cats " + Arrays.toString(cats));
         Long projId = ProjectService.save(new Project(name, id, about, github), email);
+        System.out.println(projId);
         CategoryForProjectService.save(cats, projId);
         resp.sendRedirect("/project");
 
